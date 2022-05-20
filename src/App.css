@@ -1,0 +1,41 @@
+ body {
+  background: linear-gradient(to right, #ee9ca7, #ffdde1);
+  /* background-image: url("https://phantom-marca.unidadeditorial.es/6254e68d06bf20467a481c8f78a75e5e/crop/0x0/1320x743/resize/828/f/webp/assets/multimedia/imagenes/2022/04/08/16494046048732.jpg") ;   */
+
+}
+
+
+
+
+.InputDiv{
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.ButtonDiv{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.form-group{
+  width: 20%;
+}
+@media screen and (max-width:450px){
+  .InputDiv{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-group{
+    width: 60%;
+  }
+  .InputDiv > div{
+    margin: 10px 0;
+  }
+}
