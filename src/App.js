@@ -69,7 +69,7 @@ function App() {
       setData(allData)
     
   
-  }, [local]);
+  }, []);
 
 
 
@@ -81,10 +81,10 @@ function App() {
 
 
   const handleClick = () =>{
-    // if(name === "" || mail === "" ||sign === "" || day ===""){
-    //   alert("Please enter all the details");
-    //   return false;
-    // }
+    if(name === "" ||sign === "" || day ===""){
+      alert("Please enter all the details");
+      return false;
+    }
     setLoading(true)
     setShowCard(true);
     const URL = `https://aztro.sameerkumar.website/?sign=${sign}&day=${day}`;
@@ -135,10 +135,10 @@ function App() {
     setShowCard(true);
     setLoading(false)
 });
-// setName("");
-// setMail("");
-// setDay("");
-// setEmailError("")
+setName("");
+setMail("");
+setDay("");
+
 
   }
 
